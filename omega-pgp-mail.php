@@ -20,7 +20,7 @@ class Omega_PGP_Mailer
 	{
 		// register hooks
 		add_action('wp_head', array($this, 'omega_pgp_mailer_wp_head') );
-		add_shortcode('omega_pgp_mail', array($this, 'omega_pgp_mailer_pgpmail_shortcode') );
+		add_shortcode('omega_pgp_mailer', array($this, 'omega_pgp_mailer_pgpmail_shortcode') );
 		add_action('init', array($this, 'omega_pgp_mailer_send') );
 			
 		add_action( 'admin_menu', array($this, 'omega_pgp_mailer_add_admin_menu') );
